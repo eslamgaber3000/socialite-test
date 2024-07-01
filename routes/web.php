@@ -25,7 +25,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //login routes 
 
-// Route::get('login/google',[LoginController::class]);
+
 Route::controller(LoginController::class)->group(function(){
     //google
     Route::get('login/google/','redirectGoogle')->name('login.google');
